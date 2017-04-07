@@ -1,0 +1,29 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{38B3C143-9FC0-7FA4-B382-205AD426CE3E}") = "Aztlan", "Assembly-CSharp.csproj", "{4F88273A-040A-D540-B4C9-5EBCC3BD097D}"
+EndProject
+Project("{38B3C143-9FC0-7FA4-B382-205AD426CE3E}") = "Aztlan", "Assembly-CSharp-Editor.csproj", "{CDA6CBAF-3CFF-7A64-7F80-8D08BB6295C2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4F88273A-040A-D540-B4C9-5EBCC3BD097D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4F88273A-040A-D540-B4C9-5EBCC3BD097D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4F88273A-040A-D540-B4C9-5EBCC3BD097D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4F88273A-040A-D540-B4C9-5EBCC3BD097D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CDA6CBAF-3CFF-7A64-7F80-8D08BB6295C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDA6CBAF-3CFF-7A64-7F80-8D08BB6295C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDA6CBAF-3CFF-7A64-7F80-8D08BB6295C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDA6CBAF-3CFF-7A64-7F80-8D08BB6295C2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal
