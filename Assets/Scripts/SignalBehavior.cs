@@ -5,7 +5,7 @@ using UnityEngine;
 public class SignalBehavior : MonoBehaviour {
 	float timer;
 	public float timerMax;
-	private int type;
+	public int typeSignal;
 
 	// Use this for initialization
 	void Start () {
@@ -20,10 +20,10 @@ public class SignalBehavior : MonoBehaviour {
 	}
 
 	public int getTypeSignal(){
-		return type;
+		return typeSignal;
 	}
 
-	public void setTypeSignal(int i){
+	/*public void setTypeSignal(int i){
 		this.type = i;
-	}
+	}*/
 }

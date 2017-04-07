@@ -29,7 +29,7 @@ public class EnnemiBehaviorV3 : MonoBehaviour {
 	public float timerMaxHear;//temps max durant lequel, l'entité est attirée par l'écho de la ressource
 	public bool asChecked; //dernière position du joueur vérifié
 	public float diviseur; //pour limiter l'augmetation du champs de vision
-
+	public int typeHostile;
 	NavMeshAgent agent; // Référencie le component navmeshagent de l'entité
 	Vector3 point; // Point dans l'espace, vérifiant si il est disponible
 	Vector3 destination; // Point vers lequel l'entité se déplace
@@ -141,6 +141,16 @@ public class EnnemiBehaviorV3 : MonoBehaviour {
 	void SetResearch () {
 		searchingNewPoint = true;
 	}
+	void OnTriggerEnter (Collider col) {
+		if (col.gameObject.tag == "Signal") {
+			if (typeHostile == col.gameObject.GetComponent <SignalBehavior> ().getTypeSignal ()) {
+				state = States.hearRessource;
+				ressourceDetected = col.gameObject.transform.position;
+			}
+		}
+	}
+
+
 
 	/// <summary>
 	/// Raises the draw gizmos event.

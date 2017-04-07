@@ -8,8 +8,6 @@ public class RessourceBehaviorV2 : MonoBehaviour {
 	public GameObject[] hostiles = new GameObject[3];
 	delegate void ContactPlayer ();
 	ContactPlayer cP;
-	delegate void HostileTransformation ();
-	HostileTransformation hT;
 	float timer;
 	public float maxTimer; // temps avant transformation en hostile
 
@@ -17,15 +15,13 @@ public class RessourceBehaviorV2 : MonoBehaviour {
 	void Start () {
 		cP += CreateSignal;
 		cP += DestroyRessource;
-		hT += CreateSignal;
-		hT += DestroyRessource;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 		timer += 1 * Time.deltaTime;
 		if (timer >= maxTimer) {
-			hT ();
+			CreateHostile ();
 		}
 	}
 
@@ -44,5 +40,6 @@ public class RessourceBehaviorV2 : MonoBehaviour {
 	void CreateHostile () {
 		GameObject ho = (GameObject)Instantiate (hostiles [type]);
 		ho.transform.position = transform.position;
+		DestroyRessource ();
 	}
 }
