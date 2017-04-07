@@ -18,7 +18,7 @@ public class RessourceBehaviorV2 : MonoBehaviour {
 		cP += CreateSignal;
 		cP += DestroyRessource;
 		hT += CreateSignal;
-		hT += CreateSignal;
+		hT += DestroyRessource;
 	}
 	
 	// Update is called once per frame
