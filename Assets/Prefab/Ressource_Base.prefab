@@ -94,13 +94,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   type: 0
   signalTrigger:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1291799920471488, guid: b5a32fc9dd1d82542ae971ffa061570f, type: 2}
+  - {fileID: 1818643962780890, guid: 13cb805e753e7c44294f714601ae83dd, type: 2}
+  - {fileID: 1069390492712824, guid: 936ab951d80800a498067d393557cf97, type: 2}
   hostiles:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1665454857353170, guid: 70718ecf22b50b247be5f49a05ea74ab, type: 2}
+  - {fileID: 1313417887923100, guid: ece23f9b5b98a0942bbf302809792822, type: 2}
+  - {fileID: 1953879444870776, guid: a576dd99fa536c443ac25559ca626231, type: 2}
   maxTimer: 100
 --- !u!135 &135077839586480630
 SphereCollider:
